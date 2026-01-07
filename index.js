@@ -8,7 +8,7 @@ async function main() {
     pdiv.innerHTML += `<div class="petition">
       <p>${p.when}</p>
       <div class="petitioners">
-        ${p.petitioners.map((x) => `${x}`)}
+        ${p.petitioners.map((x) => `<img src="/img/steam-${x}.jpg" />`)}
       </div>
     </div>`;
   }
