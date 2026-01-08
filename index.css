@@ -14,11 +14,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5vw;
+    padding: 10px 0 5vw 0;
+    background-color: rebeccapurple;
 }
 
-/*#miguemx > img {
-}*/
+.image-container img {
+    width: 184px;
+    height: 184px;
+}
 
 #please {
     width: 100vw;
@@ -40,4 +43,22 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+}
+
+.image-container {
+    position: relative; /* anchor for absolute children */
+    width: 180px; /* match background image size */
+}
+
+.bg {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none; /* optional */
 }
