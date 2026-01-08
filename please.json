@@ -2,7 +2,10 @@
   "please": [
     {
       "when": "2026-01-30",
-      "petitioners": ["viceo", "cilacj", "RafaARV"]
+      "game": "dota2 (beta)",
+      "reason": "necesitamos un pos 5",
+      "petitioners": ["viceo", "cilacj", "RafaARV"],
+      "status": "open"
     }
   ]
 }

@@ -6,7 +6,11 @@ async function main() {
   const pdiv = document.createElement("div");
   for (p of pdata.please) {
     pdiv.innerHTML += `<div class="petition">
-      <p>${p.when}</p>
+      <div class="entry">
+        <p>${p.when}</p>
+        <p>${p.game}</p>
+        <p>${p.reason}</p>
+      </div>
       <div class="petitioners">
         ${p.petitioners.map((x) => `<img src="/img/steam-${x}.jpg" />`)}
       </div>
