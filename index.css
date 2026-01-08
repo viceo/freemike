@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body {
+    background-color: #2f2963;
+    color: white;
+}
+
 #miguemx {
     width: 100vw;
     display: flex;
