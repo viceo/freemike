@@ -43,14 +43,14 @@ window.addEventListener("load", async function () {
 
 // Avoid zooming page on rapid
 // tapping events (mobile)
-let lastTapTime = 0;
-document.addEventListener("touchend", (event) => {
-  const currentTime = new Date().getTime();
-  const tapInterval = currentTime - lastTapTime;
+// let lastTapTime = 0;
+// document.addEventListener("touchend", (event) => {
+//   const currentTime = new Date().getTime();
+//   const tapInterval = currentTime - lastTapTime;
 
-  if (tapInterval < 1000 && tapInterval > 0) {
-    event.preventDefault();
-  }
+//   if (tapInterval < 1000 && tapInterval > 0) {
+//     event.preventDefault();
+//   }
 
-  lastTapTime = currentTime;
-});
+//   lastTapTime = currentTime;
+// });
