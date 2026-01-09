@@ -108,6 +108,7 @@ main .msn.action {
   background: #efefef;
   border-radius: 1.25rem;
   padding: 1.5rem;
+  margin: 0 auto;
   position: relative;
 }
 .modal .modal-content .close {
@@ -115,7 +116,7 @@ main .msn.action {
   aspect-ratio: 1/1;
   position: absolute;
   bottom: calc(100% + 0.313rem);
-  left: calc(100% + 0.313rem);
+  right: 0;
   background: #ffffff;
   border-radius: 50%;
   cursor: pointer;
