@@ -1,5 +1,6 @@
 const actions = document.querySelectorAll(".action");
 const modal = document.querySelector(".modal");
+const body = document.querySelector("body")
 
 actions.forEach((a) =>
   a.addEventListener("click", (event) => {
@@ -8,6 +9,7 @@ actions.forEach((a) =>
 
     switch (targetAttribute) {
       case "open":
+        body.style = "hidden";
         modal.toggleAttribute("open");
         modal.classList.add("show");
         setTimeout(() => {
@@ -16,6 +18,7 @@ actions.forEach((a) =>
         }, 250);
         break;
       case "close":
+        body.style = "initial";
         modal.classList.add("hide");
         setTimeout(() => {
           modal.classList.remove("hide");
