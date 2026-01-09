@@ -44,7 +44,7 @@ document.addEventListener("touchend", (event) => {
   const currentTime = new Date().getTime();
   const tapInterval = currentTime - lastTapTime;
 
-  if (tapInterval < 500 && tapInterval > 0) {
+  if (tapInterval < 1000 && tapInterval > 0) {
     event.preventDefault();
   }
 
