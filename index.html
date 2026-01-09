@@ -1,29 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>shouldifreemike</title>
-        <link href="/favicon.ico" rel="icon" />
-        <link href="/assets/styles/main.css" rel="stylesheet" />
-        <link href="/assets/styles/week.css" rel="stylesheet" />
-    </head>
-    <body>
-        <section id="wrapper">
-            <h3>¿Deberías liberar a mike hoy?</h3>
-            <div class="image-container">
-                <img
-                    src="assets/img/steam-miguemx.jpg"
-                    class="image-background"
-                />
-                <img src="assets/img/jail.png" class="image-overlay" />
-            </div>
-            <h2 id="message">Si, deberias liberarlo... su equipo lo espera</h2>
-            <span id="reload"
-                >Presiona <span class="space-btn">Espacio</span> o haz click
-                sobre la imagen</span
-            >
-        </section>
-        <script src="/assets/js/main.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shouldifreemike</title>
+    <link href="/favicon.ico" rel="icon" />
+    <link href="/assets/styles/main.css" rel="stylesheet" />
+    <link href="/assets/styles/week.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <main class="gatitos-muertos">
+      <section id="wrapper">
+        <h3 class="title">¿Deberías liberar a mike hoy?</h3>
+        <div class="image-container">
+          <img
+            src="assets/img/steam-miguemx.jpg"
+            class="image-background"
+            title="freemike now"
+            alt="Quiero ser libre y jugar"
+          />
+          <img
+            src="assets/img/jail.png"
+            class="image-overlay"
+            title="Vania"
+            alt="Vania es robachicos"
+          />
+        </div>
+        <h2 class="msn msn-title" id="message"></h2>
+        <span class="msn" id="reload">Presiona <span class="space-btn">Espacio</span> o haz click sobre la imagen</span>
+        <span class="msn underline action" data-action="open">Petición firmada por</span>
+      </section>
+    </main>
+    <div class="modal">
+        <div class="modal-content">
+            <picture class="close action" data-action="close">
+                <img src="./assets/img/ic_close.svg" alt="">
+            </picture>
+            <ul class="list-grid">
+                <li class="list-item">
+                    <picture class="profile-picture">
+                        <img src="/assets/img/steam-cilacj.jpg" alt="">
+                    </picture>
+                </li>
+                <li class="list-item">
+                    <picture class="profile-picture">
+                        <img src="/assets/img/steam-JuanRG.jpg" alt="">
+                    </picture>
+                </li>
+                <li class="list-item">
+                    <picture class="profile-picture">
+                        <img src="/assets/img/steam-viceo.jpg" alt="">
+                    </picture>
+                </li>
+                <li class="list-item">
+                    <picture class="profile-picture">
+                        <img src="/assets/img/steam-RafaARV.jpg" alt="">
+                    </picture>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/modal.js"></script>
+  </body>
 </html>

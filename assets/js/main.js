@@ -5,6 +5,10 @@ const messages = {
     "Obvio microbio",
     "Es pecado si no",
     "Ya es hora",
+    "Te estas tardando",
+    "Pa luego es tarde",
+    "Se lo merece",
+    "Te mandó a francia",
   ],
   no: ["No, puedes llevartelo", "Nel, mejor salgan a cenar"],
 };
