@@ -137,4 +137,35 @@ main .msn.action {
 }
 .modal[open] {
   display: grid;
+  opacity: 0;
+}
+.modal.active {
+  opacity: 1;
+}
+.modal.show {
+  animation: modalShow 0.3s ease;
+}
+.modal.hide {
+  animation: modalhide 0.3s ease;
+}
+
+@keyframes modalShow {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes modalhide {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
 }
