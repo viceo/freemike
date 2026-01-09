@@ -11,8 +11,8 @@ actions.forEach((a) =>
         modal.toggleAttribute("open");
         modal.classList.add("show");
         setTimeout(() => {
-            modal.classList.add("active")
-            modal.classList.remove("show");
+          modal.classList.add("active");
+          modal.classList.remove("show");
         }, 250);
         break;
       case "close":
@@ -20,9 +20,22 @@ actions.forEach((a) =>
         setTimeout(() => {
           modal.classList.remove("hide");
           modal.removeAttribute("open");
-          modal.classList.remove("active")
+          modal.classList.remove("active");
         }, 250);
         break;
     }
   })
 );
+
+document.addEventListener("click", (event) => {
+  let eTarget = event.target;
+
+  if (eTarget.classList.contains("modal")) {
+    modal.classList.add("hide");
+    setTimeout(() => {
+      modal.classList.remove("hide");
+      modal.removeAttribute("open");
+      modal.classList.remove("active");
+    }, 250);
+  }
+});
