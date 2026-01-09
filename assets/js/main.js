@@ -36,3 +36,17 @@ window.addEventListener("load", async function () {
     if (e.key === " " || e.code === "Space") setMsg();
   });
 });
+
+// Avoid zooming page on rapid
+// tapping events (mobile)
+let lastTapTime = 0;
+document.addEventListener("touchend", (event) => {
+  const currentTime = new Date().getTime();
+  const tapInterval = currentTime - lastTapTime;
+
+  if (tapInterval < 500 && tapInterval > 0) {
+    event.preventDefault();
+  }
+
+  lastTapTime = currentTime;
+});
